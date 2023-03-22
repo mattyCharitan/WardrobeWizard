@@ -87,5 +87,11 @@ namespace Repositories.Implantation
             await context.SaveChangesAsync();
             return true;
         }
+
+        public async Task<User> find(int id)
+        {
+            User user = await context.Users.FindAsync(id);
+            return user;
+        }
     }
 }

@@ -15,6 +15,10 @@ namespace AppServices
         {
             CreateMap<User, UserDTO>();
             CreateMap<UserDTO, User>();
+            CreateMap<Item, ItemDTO>();
+            CreateMap<ItemDTO, Item>();
+            CreateMap<OutfitDTO, Outfit>();
+            CreateMap<Outfit, OutfitDTO>();
 
             // Additional mappings here...
         }

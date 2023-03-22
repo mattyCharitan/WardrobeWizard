@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.Implantation
 {
-    internal class ItemRepository : IItemRepository
+    public class ItemRepository : IItemRepository
     {
         WardrobeWizard context;
 

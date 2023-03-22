@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Repositories.Implantation
 {
 
-    internal class OutfitRepository : IOutfitRepository
+    public class OutfitRepository : IOutfitRepository
     {
         WardrobeWizard context;
 
@@ -67,5 +67,12 @@ namespace Repositories.Implantation
             return await context.SaveChangesAsync();
 
         }
+
+        public async Task<Outfit> find(int id)
+        {
+            Outfit outfit = await context.Outfits.FindAsync(id);
+            return outfit;
+        }
+
     }
 }

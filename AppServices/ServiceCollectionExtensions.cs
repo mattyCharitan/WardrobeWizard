@@ -15,6 +15,8 @@ namespace AppServices
         public static void AddAppServices(this IServiceCollection services)
         {
             services.AddScoped<IUserSer, UserService>();
+            services.AddScoped<IItemSer, ItemService>();
+            services.AddScoped<IOutfitSer, OutfitService>();
 
            //services.AddScoped<ICategoryService, CategoryService>();
             //services.AddScoped<IAuthorService,AuthorService>();

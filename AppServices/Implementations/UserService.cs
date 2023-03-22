@@ -46,8 +46,6 @@ namespace AppServices.Implementations
 
             }
             return usersDtos;
-
-
         }
 
         public async Task<UserDTO> GetById(int id)

@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Repositories.Interfaces
 {
-    internal interface IOutfitRepository:IRepository<Outfit>
+    public interface IOutfitRepository:IRepository<Outfit>
     {
+        Task<Outfit> find(int id);
     }
 }

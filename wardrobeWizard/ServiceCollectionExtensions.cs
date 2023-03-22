@@ -13,15 +13,21 @@ namespace Repositories
 {
     public static class ServiceCollectionExtensions
     {
+        private static string ReplaceWithCurrentLocation(string connStr)
+        {
+            string str = AppDomain.CurrentDomain.BaseDirectory;
+            string directryAboveBin = str.Substring(0, str.IndexOf("\\bin"));
+            string twoDirectoriesAboveBin = directryAboveBin.Substring(0, directryAboveBin.LastIndexOf("\\"));
+            connStr = string.Format(connStr, twoDirectoriesAboveBin);
+            return connStr;
+        }
         public static void AddRepositories(this IServiceCollection services)
         {
             services.AddScoped<IUserRepository, UserRepository>();
-            //services.AddScoped<ICategoryRepository, CategoryRepository>();
-            //services.AddScoped<IAuthorRepository,AuthorRepository>();
-            //get the connection string from configuration...
-            //calculate relative connection string...
-            string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\wardrobeWizard\\DB\\Database.mdf;Integrated Security=True;";
-            services.AddDbContext<WardrobeWizard>(options => options.UseSqlServer(connString));
+            services.AddScoped<IItemRepository, ItemRepository>();
+            services.AddScoped<IOutfitRepository, OutfitRepository>();
+            string connStr = ReplaceWithCurrentLocation("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={0}\\DB\\Database.mdf;Integrated Security=True;");
+            services.AddDbContext<WardrobeWizard>(options => options.UseSqlServer(connStr));
         }
     }
 }
