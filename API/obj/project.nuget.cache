@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nRAkqxXDzKZjAyirwDhu0sQkxsxANP8Qb6EWzKx3qGKSUH/etnAkOBiFtTMU+jLiCF4jFrEBZ5948qODxYdryQ==",
+  "dgSpecHash": "mQ7q/tcltvGJGVXpFcL9acYRiMuWmhe8ueILdC92aWKqOvcc3re9Q3oKhWR9ov33JLuAIVuS9SOcuf8d9AM6pw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\מטי\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\מטי\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

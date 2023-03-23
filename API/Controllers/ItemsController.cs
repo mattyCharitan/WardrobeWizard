@@ -26,7 +26,7 @@ namespace API.Controllers
 
 
         [HttpGet("{id}")]
-        public async Task<ItemDTO> GetById([FromRoute] int id)
+        public async Task<ItemDTO> GetById(int id)
         {
             return await itemService.GetById(id);
         }

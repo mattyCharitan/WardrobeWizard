@@ -17,6 +17,7 @@ namespace AppServices
             services.AddScoped<IUserSer, UserService>();
             services.AddScoped<IItemSer, ItemService>();
             services.AddScoped<IOutfitSer, OutfitService>();
+            services.AddScoped<IMeasurementSer, MeasurementService>();
 
            //services.AddScoped<ICategoryService, CategoryService>();
             //services.AddScoped<IAuthorService,AuthorService>();

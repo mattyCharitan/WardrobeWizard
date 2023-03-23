@@ -3439,11 +3439,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\AppServices\\AppServices.csproj",
+      "projectUniqueName": "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\AppServices\\AppServices.csproj",
       "projectName": "AppServices",
-      "projectPath": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\AppServices\\AppServices.csproj",
+      "projectPath": "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\AppServices\\AppServices.csproj",
       "packagesPath": "C:\\Users\\מטי\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\AppServices\\obj\\",
+      "outputPath": "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\AppServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3465,8 +3465,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\wardrobeWizard\\Repositories.csproj": {
-              "projectPath": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\wardrobeWizard\\Repositories.csproj"
+            "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\wardrobeWizard\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\wardrobeWizard\\Repositories.csproj"
             }
           }
         }

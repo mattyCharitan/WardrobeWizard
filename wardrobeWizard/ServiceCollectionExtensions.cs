@@ -26,6 +26,7 @@ namespace Repositories
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IItemRepository, ItemRepository>();
             services.AddScoped<IOutfitRepository, OutfitRepository>();
+            services.AddScoped<IMeasurementRepository, MeasurementRepository>();
             string connStr = ReplaceWithCurrentLocation("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={0}\\DB\\Database.mdf;Integrated Security=True;");
             services.AddDbContext<WardrobeWizard>(options => options.UseSqlServer(connStr));
         }

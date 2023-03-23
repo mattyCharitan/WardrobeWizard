@@ -19,6 +19,9 @@ namespace AppServices
             CreateMap<ItemDTO, Item>();
             CreateMap<OutfitDTO, Outfit>();
             CreateMap<Outfit, OutfitDTO>();
+            CreateMap<MeasurementDTO, Measurement>();
+            CreateMap<Measurement, MeasurementDTO>();
+
 
             // Additional mappings here...
         }

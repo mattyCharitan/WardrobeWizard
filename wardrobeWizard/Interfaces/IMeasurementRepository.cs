@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.Interfaces
 {
-    internal interface IMeasurementRepository: IRepository<Measurement>
+    public interface IMeasurementRepository: IRepository<Measurement>
     {
     }
 }
