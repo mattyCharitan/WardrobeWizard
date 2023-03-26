@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1Irlhl9lEM20g7OsMKN/GrSy4dAMzKBVsbJIqn5xgaSMON5PGWcDS9LVOuIe3bEvgzzgvPSI4uRGNyX6XjEkUg==",
+  "dgSpecHash": "UdO5nzUURuHujQXZ7QdlhTHVRrIC/LMDore9WRJR4LgbKu29GS4mChpvFSStBISlTlsJ7m61bOXvkSJ3/V5TiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\wardrobeWizard\\Repositories.csproj",
+  "projectFilePath": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\wardrobeWizard\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\מטי\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\מטי\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
