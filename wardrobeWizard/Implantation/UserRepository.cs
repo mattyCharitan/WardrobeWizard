@@ -41,7 +41,9 @@ namespace Repositories.Implantation
         public async Task<int> Create(User entity)
         {
             await context.Users.AddAsync(entity);
-            return await context.SaveChangesAsync();
+             await context.SaveChangesAsync();
+            return entity.UserId;
+
 
         }
 
@@ -71,7 +73,9 @@ namespace Repositories.Implantation
 
             
 
-            return await context.SaveChangesAsync();
+             await context.SaveChangesAsync();
+            return id;
+
         }
 
         public async Task<bool> Delete(int id)

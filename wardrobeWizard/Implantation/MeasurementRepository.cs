@@ -20,7 +20,8 @@ namespace Repositories.Implantation
         public async Task<int> Create(Measurement entity)
         {
             await context.Measurements.AddAsync(entity);
-            return await context.SaveChangesAsync();
+             await context.SaveChangesAsync();
+            return entity.MeasurementsId;
         }
 
         public async Task<bool> Delete(int id)
@@ -62,7 +63,9 @@ namespace Repositories.Implantation
             measurement.Hip = entity.Hip;
             measurement.Waist = entity.Waist;
             measurement.Bust = entity.Bust;
-            return await context.SaveChangesAsync();
+            await context.SaveChangesAsync();
+            return id;
+
         }
     }
 }

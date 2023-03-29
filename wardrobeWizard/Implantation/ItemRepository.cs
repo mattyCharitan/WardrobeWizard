@@ -20,7 +20,9 @@ namespace Repositories.Implantation
         public async Task<int> Create(Item entity)
         {
             await context.Items.AddAsync(entity);
-            return await context.SaveChangesAsync();
+            
+            await context.SaveChangesAsync();
+            return entity.ItemId;
         }
 
         public async Task<bool> Delete(int id)
@@ -61,7 +63,8 @@ namespace Repositories.Implantation
             item.Brand = entity.Brand;
             item.Size = entity.Size;
             item.ImageUrl = entity.ImageUrl;
-            return await context.SaveChangesAsync();
+            await context.SaveChangesAsync();
+            return id;
         }
     }
 }

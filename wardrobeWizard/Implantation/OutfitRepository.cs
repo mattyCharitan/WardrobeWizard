@@ -21,7 +21,9 @@ namespace Repositories.Implantation
         public async Task<int> Create(Outfit entity)
         {
             await context.Outfits.AddAsync(entity);
-            return await context.SaveChangesAsync();
+             await context.SaveChangesAsync();
+            return entity.OutfitId;
+
         }
 
         public async Task<bool> Delete(int id)
@@ -64,7 +66,9 @@ namespace Repositories.Implantation
             outfit.Name = entity.Name;
             outfit.Description = entity.Description;
            // outfit.Items = entity.Items;
-            return await context.SaveChangesAsync();
+             await context.SaveChangesAsync();
+            return id;
+
 
         }
 
