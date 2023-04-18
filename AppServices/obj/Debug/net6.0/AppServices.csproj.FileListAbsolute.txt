@@ -13,3 +13,18 @@ C:\Users\מטי\source\repos\WardrobeWizard\AppServices\obj\Debug\net6.0\AppServ
 C:\Users\מטי\source\repos\WardrobeWizard\AppServices\obj\Debug\net6.0\refint\AppServices.dll
 C:\Users\מטי\source\repos\WardrobeWizard\AppServices\obj\Debug\net6.0\AppServices.pdb
 C:\Users\מטי\source\repos\WardrobeWizard\AppServices\obj\Debug\net6.0\ref\AppServices.dll
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\bin\Debug\net6.0\AppServices.deps.json
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\bin\Debug\net6.0\AppServices.dll
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\bin\Debug\net6.0\AppServices.pdb
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\bin\Debug\net6.0\Repositories.dll
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\bin\Debug\net6.0\Repositories.pdb
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\obj\Debug\net6.0\AppServices.csproj.AssemblyReference.cache
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\obj\Debug\net6.0\AppServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\obj\Debug\net6.0\AppServices.AssemblyInfoInputs.cache
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\obj\Debug\net6.0\AppServices.AssemblyInfo.cs
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\obj\Debug\net6.0\AppServices.csproj.CoreCompileInputs.cache
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\obj\Debug\net6.0\AppServices.csproj.CopyComplete
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\obj\Debug\net6.0\AppServices.dll
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\obj\Debug\net6.0\refint\AppServices.dll
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\obj\Debug\net6.0\AppServices.pdb
+C:\Users\hadas\OneDrive\מסמכים\הנדסאים\שנה ב\final project\AppServices\obj\Debug\net6.0\ref\AppServices.dll
