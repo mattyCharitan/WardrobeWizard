@@ -8558,23 +8558,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\מטי\\.nuget\\packages\\": {},
+    "C:\\Users\\hadas\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\wardrobeWizard\\Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\hadas\\OneDrive\\מסמכים\\Visual Studio 2022\\project wardrobe\\wardrobeWizard\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\wardrobeWizard\\Repositories.csproj",
-      "packagesPath": "C:\\Users\\מטי\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\wardrobeWizard\\obj\\",
+      "projectPath": "C:\\Users\\hadas\\OneDrive\\מסמכים\\Visual Studio 2022\\project wardrobe\\wardrobeWizard\\Repositories.csproj",
+      "packagesPath": "C:\\Users\\hadas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hadas\\OneDrive\\מסמכים\\Visual Studio 2022\\project wardrobe\\wardrobeWizard\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\מטי\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hadas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8685,7 +8685,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },

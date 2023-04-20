@@ -4,6 +4,7 @@ using AppServices.Interfaces;
 using IdentityServer3.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication;
 
 namespace API.Controllers
 {
@@ -11,17 +12,24 @@ namespace API.Controllers
     public class ItemsController : WardrobeBaseController
     {
         IItemSer itemService;
+        IAuthenticationService _authenticationService;
 
-        public ItemsController(IItemSer itemService)
+        public ItemsController(IItemSer itemService, IAuthenticationService authenticationService)
         {
             this.itemService = itemService;
+            _authenticationService = authenticationService;
         }
 
         [HttpGet]
 
-        public async Task<List<ItemDTO>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            return await itemService.GetAll();
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Items/GetAll" }, "Google");
+            }
+            var items = await itemService.GetAll();
+            return Ok(items);
         }
 
 

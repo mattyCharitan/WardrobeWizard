@@ -3,6 +3,7 @@ using AppServices.Implementations;
 using AppServices.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication;
 
 namespace API.Controllers
 {
@@ -11,17 +12,24 @@ namespace API.Controllers
     public class MeasurementsController : WardrobeBaseController
     {
         IMeasurementSer measurementService;
+        IAuthenticationService _authenticationService;
 
-        public MeasurementsController(IMeasurementSer measurementService)
+        public MeasurementsController(IMeasurementSer measurementService, IAuthenticationService authenticationService)
         {
             this.measurementService = measurementService;
+            _authenticationService = authenticationService;
         }
 
         [HttpGet]
 
-        public async Task<List<MeasurementDTO>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            return await measurementService.GetAll();
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Measurments/GetAll" }, "Google");
+            }
+            var measurments = await measurementService.GetAll();
+            return Ok(measurments);
         }
 
 
