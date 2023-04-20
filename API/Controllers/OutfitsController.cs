@@ -1,8 +1,12 @@
 ﻿using AppServices.DTO;
 using AppServices.Implementations;
 using AppServices.Interfaces;
+using IdentityServer3.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Repositories.DataObjects;
+using Microsoft.AspNetCore.Authentication;
+
 
 namespace API.Controllers
 {
@@ -10,17 +14,24 @@ namespace API.Controllers
     public class OutfitsController : WardrobeBaseController
     {
         IOutfitSer outfitService;
+        IAuthenticationService _authenticationService;
 
-        public OutfitsController(IOutfitSer outfitService)
+        public OutfitsController(IOutfitSer outfitService, IAuthenticationService authenticationService)
         {
             this.outfitService = outfitService;
+            _authenticationService = authenticationService;
         }
 
         [HttpGet]
 
-        public async Task<List<OutfitDTO>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            return await outfitService.GetAll();
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Outfit/GetAll" }, "Google");
+            }
+            var outfit = await outfitService.GetAll();
+            return Ok(outfit);
         }
         [HttpGet("{id}")]
         public async Task<OutfitDTO> GetById( int id)
