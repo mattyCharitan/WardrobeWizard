@@ -8564,9 +8564,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\wardrobeWizard\\Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\wardrobeWizard\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\wardrobeWizard\\Repositories.csproj",
+      "projectPath": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\wardrobeWizard\\Repositories.csproj",
       "packagesPath": "C:\\Users\\מטי\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\wardrobeWizard\\obj\\",
       "projectStyle": "PackageReference",
