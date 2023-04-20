@@ -40,7 +40,7 @@ namespace API.Controllers
 
         [HttpDelete]
         public async Task<bool>Delete(int id)
-        {
+        { 
             return await userService.Delete(id);
         }
 
