@@ -11,7 +11,7 @@
         "projectName": "Repositories",
         "projectPath": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\wardrobeWizard\\Repositories.csproj",
         "packagesPath": "C:\\Users\\מטי\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\מטי\\source\\repos\\WardrobeWizard\\wardrobeWizard\\obj\\",
+        "outputPath": "C:\\Users\\מטי\\source\\repos\\wardrobeWizard\\wardrobeWizard\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
