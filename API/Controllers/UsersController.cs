@@ -1,4 +1,5 @@
-﻿using AppServices.DTO;
+﻿using Microsoft.AspNetCore.Authentication;
+using AppServices.DTO;
 using AppServices.Interfaces;
 using IdentityServer3.Core.Services;
 using Microsoft.AspNetCore.Hosting.Server;
@@ -9,16 +10,22 @@ namespace API.Controllers
     public class UsersController:WardrobeBaseController
     {
         IUserSer userService;
+        IAuthenticationService _authenticationService;
 
-        public UsersController(IUserSer userService)
+        public UsersController(IUserSer userService, IAuthenticationService authenticationService)
         {
             this.userService = userService;
+            _authenticationService = authenticationService;
         }
 
         [HttpGet]
 
         public async Task<List<UserDTO>> GetAll()
         {
+            if(!User.Identity.IsAuthenticated)
+            {
+             //   return Challenge(new AuthenticationProperties { RedirectUri = "/Users/GetAll" }, "Google");
+            }
             return await userService.GetAll();
         }
         [HttpGet("{id}")]
