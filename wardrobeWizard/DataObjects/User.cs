@@ -17,7 +17,9 @@ public partial class User
 
     public string Phone { get; set; } = null!;
 
-    public string Password { get; set; } = null!;
+    public string PasswordHash { get; set; } = null!;
+
+    public string? GoogleId { get; set; }
 
     public virtual ICollection<Item> Items { get; } = new List<Item>();
 

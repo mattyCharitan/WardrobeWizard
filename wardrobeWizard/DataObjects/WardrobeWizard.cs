@@ -23,7 +23,7 @@ public partial class WardrobeWizard : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Item>(entity =>
@@ -164,16 +164,19 @@ public partial class WardrobeWizard : DbContext
                 .IsUnicode(false)
                 .UseCollation("SQL_Latin1_General_CP1_CI_AS")
                 .HasColumnName("gender");
+            entity.Property(e => e.GoogleId)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.Name)
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .UseCollation("SQL_Latin1_General_CP1_CI_AS")
                 .HasColumnName("name");
-            entity.Property(e => e.Password)
+            entity.Property(e => e.PasswordHash)
                 .HasMaxLength(50)
                 .IsUnicode(false)
-                .UseCollation("SQL_Latin1_General_CP1_CI_AS")
-                .HasColumnName("password");
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.Phone)
                 .HasMaxLength(20)
                 .IsUnicode(false)

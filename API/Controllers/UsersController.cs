@@ -20,14 +20,17 @@ namespace API.Controllers
 
         [HttpGet]
 
-        public async Task<List<UserDTO>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            if(!User.Identity.IsAuthenticated)
+            if (!User.Identity.IsAuthenticated)
             {
-             //   return Challenge(new AuthenticationProperties { RedirectUri = "/Users/GetAll" }, "Google");
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Users/GetAll" }, "Google");
             }
-            return await userService.GetAll();
+
+            var users = await userService.GetAll();
+            return Ok(users);
         }
+
         [HttpGet("{id}")]
         public async Task<UserDTO> GetById([FromRoute] int id)
         {

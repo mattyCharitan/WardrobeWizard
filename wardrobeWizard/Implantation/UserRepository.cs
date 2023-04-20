@@ -47,6 +47,7 @@ namespace Repositories.Implantation
 
         }
 
+
         public async Task<int> Update(int id, User entity)
         {
             var user = await context.Users.FindAsync(id);
@@ -92,10 +93,9 @@ namespace Repositories.Implantation
             return true;
         }
 
-        public async Task<User> find(int id)
+        public async Task<User> GetByEmail(string email)
         {
-            User user = await context.Users.FindAsync(id);
-            return user;
+            return await context.Users.FirstOrDefaultAsync(u => u.Email == email);
         }
     }
 }

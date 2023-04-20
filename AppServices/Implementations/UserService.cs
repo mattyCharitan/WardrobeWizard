@@ -2,13 +2,7 @@
 using AppServices.Interfaces;
 using Repositories.DataObjects;
 using Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
-
+using System.Security.Claims;
 
 namespace AppServices.Implementations
 {
@@ -25,9 +19,13 @@ namespace AppServices.Implementations
         {
             User user = Mapping.Mapper.Map<User>(entity);
             //check how should i get the missing pieces of the object
-            user.Password = "123";
+            user.PasswordHash = "123";
             return userRepository.Create(user);
         }
+
+       
+
+
 
         public Task<bool> Delete(int id)
         {
@@ -60,7 +58,7 @@ namespace AppServices.Implementations
         {
             User user = Mapping.Mapper.Map<User>(entity);
             //check how should i get the missing pieces of the object
-            user.Password = "123";
+            user.PasswordHash = "123";
             return await userRepository.Update(id, user);
         }
     }
