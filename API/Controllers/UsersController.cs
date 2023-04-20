@@ -24,9 +24,8 @@ namespace API.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return Challenge(new AuthenticationProperties { RedirectUri = "/Users/GetAll" }, "Google");
+             return Challenge(new AuthenticationProperties { RedirectUri = "/Users/GetAll" }, "Google");
             }
-
             var users = await userService.GetAll();
             return Ok(users);
         }
