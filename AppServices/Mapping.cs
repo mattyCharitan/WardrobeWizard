@@ -20,6 +20,6 @@ namespace AppServices
             return mapper;
         });
 
-        public static IMapper Mapper => Lazy.Value;
+        public static IMapper Mapper => Lazy.ValueK;
     }
 }
