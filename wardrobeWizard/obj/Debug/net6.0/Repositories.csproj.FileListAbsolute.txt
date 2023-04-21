@@ -40,3 +40,17 @@ C:\Users\hadas\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\refin
 C:\Users\hadas\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\Repositories.pdb
 C:\Users\hadas\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\Repositories.genruntimeconfig.cache
 C:\Users\hadas\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\ref\Repositories.dll
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\bin\Debug\net6.0\Repositories.deps.json
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\bin\Debug\net6.0\Repositories.runtimeconfig.json
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\bin\Debug\net6.0\Repositories.dll
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\bin\Debug\net6.0\Repositories.pdb
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\Repositories.AssemblyInfo.cs
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\Repositories.dll
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\refint\Repositories.dll
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\Repositories.pdb
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\Repositories.genruntimeconfig.cache
+C:\Users\חריטן מאטיל\Source\Repos\WardrobeWizard\wardrobeWizard\obj\Debug\net6.0\ref\Repositories.dll

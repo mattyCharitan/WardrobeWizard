@@ -21,5 +21,6 @@ namespace AppServices
         });
 
         public static IMapper Mapper => Lazy.Value;
+        //HI
     }
 }
