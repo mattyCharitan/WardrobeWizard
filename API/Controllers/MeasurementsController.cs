@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Authentication;
 namespace API.Controllers
 {
   
-    //hi
     public class MeasurementsController : WardrobeBaseController
     {
         IMeasurementSer measurementService;
@@ -26,7 +25,7 @@ namespace API.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return Challenge(new AuthenticationProperties { RedirectUri = "/Measurments/GetAll" }, "Google");
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Measurements/GetAll" }, "Google");
             }
             var measurments = await measurementService.GetAll();
             return Ok(measurments);
@@ -34,30 +33,50 @@ namespace API.Controllers
 
 
         [HttpGet("{id}")]
-        public async Task<MeasurementDTO> GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            return await measurementService.GetById(id);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Measurements/GetById" }, "Google");
+            }
+            var measurements = await measurementService.GetById(id);
+            return Ok(measurements);
         }
 
         [HttpDelete]
-        public async Task<bool> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            return await measurementService.Delete(id);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Measurements/Delete" }, "Google");
+            }
+            var delete = await measurementService.Delete(id);
+            return Ok(delete);
         }
 
 
         [HttpPut]
 
-        public async Task<int> Create(MeasurementDTO measurement)
+        public async Task<IActionResult> Create(MeasurementDTO measurement)
         {
-            return await measurementService.Create(measurement);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Measurements/Create" }, "Google");
+            }
+            var create = await measurementService.Create(measurement);
+            return Ok(create);
         }
 
         [HttpPost]
 
-        public async Task<int> Update(int id, MeasurementDTO measurement)
+        public async Task<IActionResult> Update(int id, MeasurementDTO measurement)
         {
-            return await measurementService.Update(id, measurement);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Measurements/Update" }, "Google");
+            }
+            var update = await measurementService.Update(id, measurement);
+            return Ok(update);
         }
 
     }

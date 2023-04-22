@@ -34,31 +34,51 @@ namespace API.Controllers
 
 
         [HttpGet("{id}")]
-        public async Task<ItemDTO> GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            return await itemService.GetById(id);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Items/GetById" }, "Google");
+            }
+            var itemById = await itemService.GetById(id);
+            return Ok(itemById);
         }
         
 
         [HttpDelete]
-        public async Task<bool> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            return await itemService.Delete(id);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Items/Delete" }, "Google");
+            }
+            var delete = await itemService.Delete(id);
+            return Ok(delete);
         }
         
 
         [HttpPut]
 
-        public async Task<int> Create(ItemDTO item)
+        public async Task<IActionResult> Create(ItemDTO item)
         {
-            return await itemService.Create(item);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Items/Create" }, "Google");
+            }
+            var createItem = await itemService.Create(item);
+            return Ok(createItem);
         }
 
         [HttpPost]
 
-        public async Task<int> Update(int id, ItemDTO item)
+        public async Task<IActionResult> Update(int id, ItemDTO item)
         {
-            return await itemService.Update(id, item);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Items/Update" }, "Google");
+            }
+            var updateItems = await itemService.Update(id, item);
+            return Ok(updateItems);
         }
 
     }

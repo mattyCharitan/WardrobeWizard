@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\API\\API.csproj": {}
+    "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\API\\API.csproj": {
+    "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\חריטן מאטיל\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\API\\obj\\",
+        "projectPath": "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\hadas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\חריטן מאטיל\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hadas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\AppServices\\AppServices.csproj": {
-                "projectPath": "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\AppServices\\AppServices.csproj"
+              "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\AppServices\\AppServices.csproj": {
+                "projectPath": "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\AppServices\\AppServices.csproj"
               }
             }
           }
@@ -88,24 +89,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\AppServices\\AppServices.csproj": {
+    "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\AppServices\\AppServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\AppServices\\AppServices.csproj",
+        "projectUniqueName": "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\AppServices\\AppServices.csproj",
         "projectName": "AppServices",
-        "projectPath": "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\AppServices\\AppServices.csproj",
-        "packagesPath": "C:\\Users\\חריטן מאטיל\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\AppServices\\obj\\",
+        "projectPath": "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\AppServices\\AppServices.csproj",
+        "packagesPath": "C:\\Users\\hadas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\AppServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\חריטן מאטיל\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hadas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -114,14 +115,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\wardrobeWizard\\Repositories.csproj": {
-                "projectPath": "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\wardrobeWizard\\Repositories.csproj"
+              "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\wardrobeWizard\\Repositories.csproj": {
+                "projectPath": "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\wardrobeWizard\\Repositories.csproj"
               }
             }
           }
@@ -197,24 +199,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\wardrobeWizard\\Repositories.csproj": {
+    "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\wardrobeWizard\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\wardrobeWizard\\Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\wardrobeWizard\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\wardrobeWizard\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\חריטן מאטיל\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\חריטן מאטיל\\Source\\Repos\\WardrobeWizard\\wardrobeWizard\\obj\\",
+        "projectPath": "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\wardrobeWizard\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\hadas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hadas\\OneDrive\\מסמכים\\הנדסאים\\שנה ב\\final project\\wardrobeWizard\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\חריטן מאטיל\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hadas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -223,6 +225,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -324,7 +327,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

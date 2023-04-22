@@ -31,30 +31,50 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<UserDTO> GetById([FromRoute] int id)
+        public async Task<IActionResult> GetById([FromRoute] int id)
         {
-            return await userService.GetById(id);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Users/GetById" }, "Google");
+            }
+            var userById = await userService.GetById(id);
+            return Ok(userById);
         }
 
 
         [HttpDelete]
-        public async Task<bool>Delete(int id)
-        { 
-            return await userService.Delete(id);
+        public async Task<IActionResult>Delete(int id)
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Users/Delete" }, "Google");
+            }
+            var deleteUser = await userService.Delete(id);
+            return Ok(deleteUser);
         }
 
         [HttpPost]
 
-        public async Task<int> Create(UserDTO user)
+        public async Task<IActionResult> Create(UserDTO user)
         {
-            return await userService.Create(user);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Users/Create" }, "Google");
+            }
+            var createUser = await userService.Create(user);
+            return Ok(createUser);
         }
 
         [HttpPut]
 
-        public async Task<int>Update(int id, UserDTO user)
+        public async Task<IActionResult> Update(int id, UserDTO user)
         {
-            return await userService.Update(id, user);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Users/Update" }, "Google");
+            }
+            var updateUser = await userService.Update(id, user);
+            return Ok(updateUser);
         }
 
     }

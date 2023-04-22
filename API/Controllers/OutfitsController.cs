@@ -34,30 +34,50 @@ namespace API.Controllers
             return Ok(outfit);
         }
         [HttpGet("{id}")]
-        public async Task<OutfitDTO> GetById( int id)
+        public async Task<IActionResult> GetById( int id)
         {
-            return await outfitService.GetById(id);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Outfit/GetById" }, "Google");
+            }
+            var outfitById = await outfitService.GetById(id);
+            return Ok(outfitById);
         }
 
 
         [HttpDelete]
-        public async Task<bool> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            return await outfitService.Delete(id);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Outfit/Delete" }, "Google");
+            }
+            var delete = await outfitService.Delete(id);
+            return Ok(delete);
         }
 
         [HttpPost]
 
-        public async Task<int> Create(OutfitDTO outfit)
+        public async Task<IActionResult> Create(OutfitDTO outfit)
         {
-            return await outfitService.Create(outfit);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Outfit/Create" }, "Google");
+            }
+            var create = await outfitService.Create(outfit);
+            return Ok(create);
         }
 
         [HttpPut]
 
-        public async Task<int> Update(int id, OutfitDTO outfit)
+        public async Task<IActionResult> Update(int id, OutfitDTO outfit)
         {
-            return await outfitService.Update(id, outfit);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Challenge(new AuthenticationProperties { RedirectUri = "/Outfit/Update" }, "Google");
+            }
+            var update = await outfitService.Update(id, outfit);
+            return Ok(update);
         }
 
     }
